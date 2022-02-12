@@ -4,7 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFDFD"
+    android:background="@drawable/gradient"
     tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/rr"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/TV_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="MUSIC PLAYER"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/EtUsername"
+        android:layout_centerVertical="true"
+        android:hint="Enter Your Username"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="#FFF"
+        android:textStyle="bold"
+        android:ellipsize="start"
+        android:gravity="center"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+
+
+
 
 </RelativeLayout>
